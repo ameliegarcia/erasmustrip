@@ -1,0 +1,62 @@
+body {
+font-family: Arial;
+background-color: #0f172a;
+color: white;
+}
+
+header {
+background-color: #1e3a8a;
+padding: 20px;
+text-align: center;
+}
+
+nav ul {
+list-style-image: url("images/icon.png");
+background-color: #020617;
+padding: 10px;
+}
+
+nav ul li {
+display: inline;
+margin: 10px;
+}
+
+nav a {
+color: white;
+padding: 5px;
+text-decoration: none;
+}
+
+nav a:hover {
+background-color: #38bdf8;
+}
+
+.active {
+border-bottom: 2px solid yellow;
+}
+
+a:visited {
+color: gray;
+}
+
+section {
+margin: 20px;
+padding: 20px;
+border: 1px solid white;
+background-color: rgba(255,255,255,0.05);
+}
+
+img {
+width: 200px;
+opacity: 0.8;
+}
+
+p.special {
+color: yellow;
+}
+
+input[type="submit"] {
+background-color: #22c55e;
+color: white;
+padding: 10px;
+}
