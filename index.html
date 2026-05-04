@@ -1,1 +1,44 @@
-<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <title>X3D Demo</title> <!-- X3DOM --> <script src="https://www.x3dom.org/download/x3dom.js"></script> <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css"> </head> <body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#222;"> <x3d width="600px" height="400px"> <scene> <!-- Fondo --> <Background skyColor='0.1 0.1 0.1'></Background> <!-- Cámara --> <Viewpoint position="0 0 6"></Viewpoint> <!-- Luz --> <DirectionalLight direction="-1 -1 -1"></DirectionalLight> <!-- Objeto --> <Transform rotation="0 1 0 0"> <Shape> <Appearance> <Material diffuseColor="0 0.6 1"></Material> </Appearance> <!-- Cambia Box por Sphere si quieres --> <Box></Box> </Shape> </Transform> </scene> </x3d> </body> </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X3D Object</title>
+
+    <!-- Librería X3DOM -->
+    <script src="https://www.x3dom.org/download/x3dom.js"></script>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css">
+</head>
+
+<body style="margin:0; background:#1e1e1e; display:flex; justify-content:center; align-items:center; height:100vh;">
+
+    <x3d width="700px" height="500px">
+        <scene>
+
+            <!-- Fondo -->
+            <Background skyColor='0.15 0.15 0.2'></Background>
+
+            <!-- Cámara -->
+            <Viewpoint position="0 0 7"></Viewpoint>
+
+            <!-- Luz -->
+            <DirectionalLight direction="-1 -1 -1"></DirectionalLight>
+
+            <!-- Objeto 3D -->
+            <Transform rotation="1 1 0 0.7">
+                <Shape>
+
+                    <Appearance>
+                        <Material diffuseColor="0 0.7 1"></Material>
+                    </Appearance>
+
+                    <Sphere radius="1.5"></Sphere>
+
+                </Shape>
+            </Transform>
+
+        </scene>
+    </x3d>
+
+</body>
+</html>
